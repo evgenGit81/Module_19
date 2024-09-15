@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="02dd04bd-ae03-4b0f-9910-8ddf5fe08e03" name="Changes" comment="1 Задание 19_2:&#10;Используя QuerySet были добавлены записи в базуданных и установлена взаимосвязь между двумя моделями таблиц.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBdjangoDB/DBdjangoDB/DBdjangoDB/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DBdjangoDB/DBdjangoDB/DBdjangoDB/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBdjangoDB/DBdjangoDB/DBdjangoDB/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DBdjangoDB/DBdjangoDB/DBdjangoDB/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBdjangoDB/DBdjangoDB/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/DBdjangoDB/DBdjangoDB/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBdjangoDB/DBdjangoDB/task1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DBdjangoDB/DBdjangoDB/task1/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726351688487</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1 Задание 19_2:&#10;Используя QuerySet были добавлены записи в базуданных и установлена взаимосвязь между двумя моделями таблиц.">
+      <option name="closed" value="true" />
+      <created>1726387870790</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726387870790</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

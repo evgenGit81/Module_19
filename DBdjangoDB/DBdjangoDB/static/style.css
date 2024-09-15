@@ -1,0 +1,16 @@
+body {
+    background: linear-gradient(blue, pink);
+    }
+h1 {
+    text-align: center;
+}
+a {
+    color: yellow;
+ }
+main {
+    background: linear-gradient(blue, pink);
+    }
+
+button {
+    background-color: green;
+}

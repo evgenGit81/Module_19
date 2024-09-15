@@ -1,0 +1,21 @@
+{% extends "menu.html" %}
+{% block title %} {{ title }} {{ block.super }}{% endblock %}
+
+{% block pagename %}
+    {{ block.super }}
+{% endblock %}
+
+{% block navigation %}
+
+        <p>
+            <a href="/platform"><h3>Главная</h3></a>
+        </p>
+        <p>
+            <a href="/platform/catalog"><h3>Посмотреть католог</h3></a>
+        </p>
+
+{% endblock %}
+
+{% block content %}
+    <p>{{ text }}</p>
+{% endblock %}

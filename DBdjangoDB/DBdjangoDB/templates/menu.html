@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=0.1" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %} {{ title }} {% endblock %}</title>
+    <link rel = 'stylesheet' type="text/css" href='{% static "style.css" %}'>
+</head>
+<body>
+    <header>
+
+        {% block pagename %}
+            <h1>{{ main_head }}</h1>
+            <hr size="2" color="green">
+        {% endblock %}
+    </header>
+    <nav>
+        <hr size="2" color="green">
+        {% block navigation%}
+
+            <p>
+                <a href="/platform"><h3>Главная</h3></a>
+            </p>
+            <p>
+                <a href="/platform/catalog"><h3>Посмотреть католог</h3></a>
+            </p>
+            <p>
+                <a href="/platform/bag"><h3>Ваша корзина</h3></a>
+            </p>
+            <p>
+                <a href="/platform/registration"><h3>Регистрация</h3></a>
+            </p>
+
+        {% endblock %}
+    </nav>
+    <main>
+        <hr size="2" color="green">
+        {% block content %}
+            <p>Посты и ссылки</p>
+        {% endblock %}
+
+    </main>
+
+</body>
+</html>
