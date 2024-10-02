@@ -7,10 +7,11 @@ class Platform(TemplateView):
 
     title = 'Магазинчик'
     main_head = "Добро пожаловать в магазин по покупке игр!"
-
+    all_posts = Post.objects.values("title", "content", "author_writer")
     extra_context = {
         'main_head': main_head,
         'title': title,
+        'all_posts': all_posts
         }
     template_name = 'index.html'
 
@@ -76,8 +77,8 @@ def sign_up_by_django(request):
 
 
 def post_gm(request):
-    all_posts = Post.objects.all()
+    all_posts = Post.objects.values("title", "content", "author_writer")
     context = {
-        'posts': all_posts,
+        'all_posts': all_posts,
     }
-    return render(request, context=context)
+    return render(request, "post.html", context=context)
