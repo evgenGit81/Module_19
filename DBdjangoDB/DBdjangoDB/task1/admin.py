@@ -5,6 +5,7 @@ from .models import *
 
 
 admin.site.register(Buyer)
+admin.site.register(Post)
 
 @admin.register(Game)
 class GameAdmin(admin.ModelAdmin):

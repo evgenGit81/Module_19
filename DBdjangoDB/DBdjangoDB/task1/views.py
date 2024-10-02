@@ -73,3 +73,11 @@ def sign_up_by_django(request):
 
 
     return render(request, "registration_page.html", context=context)
+
+
+def post_gm(request):
+    all_posts = Post.objects.all()
+    context = {
+        'posts': all_posts,
+    }
+    return render(request, context=context)

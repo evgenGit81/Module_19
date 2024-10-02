@@ -20,6 +20,7 @@ class Game(models.Model):
         return self.title
 
 class Post(models.Model):
+
     title = models.CharField(max_length=1000)
     content = models.TextField()
     author_writer = models.CharField(max_length=500)

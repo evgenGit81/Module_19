@@ -12,5 +12,11 @@
 {% endblock %}
 
 {% block content %}
-    <p>Здесь могла бы быть ваша реклама, а статьи в процессе написания.</p>
+    {% for post in all_posts %}
+            <li>
+                <h4> {{ post.title }} </h4>
+                <p>{{post.content}} </p>
+                <p>{{post.author_writer}}</p>
+            </li>
+        {% endfor %}
 {% endblock %}

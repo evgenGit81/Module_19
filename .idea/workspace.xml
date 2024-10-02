@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02dd04bd-ae03-4b0f-9910-8ddf5fe08e03" name="Changes" comment="&#10;Задание 19_4:&#10;При помощи сайта https://sqliteonline.com/ были внесены изменения в базу данных (в ее логах можно посмотреть или в файле истории); добавлена админ-панель (имя админа: siteadmin, пароль: q2w3e4r5t - главное не использовать его реально :))) ) и оптимизирована для удобства, производилось как удаление записей в базе, так и коррекция." />
+    <list default="true" id="02dd04bd-ae03-4b0f-9910-8ddf5fe08e03" name="Changes" comment="&#10;Задание 19_4:&#10;При помощи сайта https://sqliteonline.com/ были внесены изменения в базу данных (в ее логах можно посмотреть или в файле истории); добавлена админ-панель (имя админа: siteadmin, пароль: q2w3e4r5t - главное не использовать его реально :))) ) и оптимизирована для удобства, производилось как удаление записей в базе, так и коррекция.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +14,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -162,7 +165,31 @@
       <option name="project" value="LOCAL" />
       <updated>1727809575831</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="&#10;Задание 19_4:&#10;При помощи сайта https://sqliteonline.com/ были внесены изменения в базу данных (в ее логах можно посмотреть или в файле истории); добавлена админ-панель (имя админа: siteadmin, пароль: q2w3e4r5t - главное не использовать его реально :))) ) и оптимизирована для удобства, производилось как удаление записей в базе, так и коррекция.">
+      <option name="closed" value="true" />
+      <created>1727809665101</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1727809665101</updated>
+    </task>
+    <task id="LOCAL-00010" summary="&#10;Задание 19_4:&#10;При помощи сайта https://sqliteonline.com/ были внесены изменения в базу данных (в ее логах можно посмотреть или в файле истории); добавлена админ-панель (имя админа: siteadmin, пароль: q2w3e4r5t - главное не использовать его реально :))) ) и оптимизирована для удобства, производилось как удаление записей в базе, так и коррекция.">
+      <option name="closed" value="true" />
+      <created>1727809694890</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727809694890</updated>
+    </task>
+    <task id="LOCAL-00011" summary="&#10;Задание 19_4:&#10;При помощи сайта https://sqliteonline.com/ были внесены изменения в базу данных (в ее логах можно посмотреть или в файле истории); добавлена админ-панель (имя админа: siteadmin, пароль: q2w3e4r5t - главное не использовать его реально :))) ) и оптимизирована для удобства, производилось как удаление записей в базе, так и коррекция.">
+      <option name="closed" value="true" />
+      <created>1727809764213</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1727809764213</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
