@@ -1,0 +1,68 @@
+<{% extends "menu.html" %}
+{% block title %}
+    {{ title }}
+    {{ block.super }}
+{% endblock%}
+
+{% block pagename %}
+    <!--{{ block.super }}-->
+    <h1>Посты по играм</h1>
+{% endblock %}
+
+{% block navigation %}
+    {{ block.super }}
+
+{% endblock %}
+{% block content %}
+
+    <div class="paginator">
+        <form method="get">
+        <p>Страницы:</p>
+        <ul>
+            {% if page_posts.has_previous %}
+               <li><a href="?page=1"><<<</a><a href="?page={{ page_posts.previous_page_number }}">Предыдущая страница</a></li>
+            {% endif %}
+
+            <li>{{ page_posts.number }}/{{ page_posts.paginator.num_pages }}</li>
+            <label for="page">Выберите страницу:</label>
+            <select id="page" name="page">
+                {% for page_number in page_posts.paginator.page_range %}
+                   <option value="{{ page_number }}"> {{page_number}} </option>
+                {% endfor %}
+
+            </select>
+
+            <input type="submit" value="Выбрать"/>
+        </ul>
+        </form>
+
+        <ul>
+            {% if page_posts.has_next %}
+             <li><a href="?page={{ page_posts.next_page_number }}" >
+                    Следующая страница
+                </a>
+                 <a href="?page={{ paginator.num_pages }}">
+                     >>>
+                 </a>
+             </li>
+
+            {% endif %}
+        </ul>
+
+    </div>
+    <h3>Список постов</h3>
+     <ul>
+         {% for post in page_posts %}
+            <li>
+                <h4> {{ post.title }} | {{post.author_writer}}</h4>
+                <p>
+                    {{post.content}}
+                </p>
+            </li>
+         {% empty %}
+            <p>Нет постов</p>
+        {% endfor %}
+    </ul>
+
+
+{% endblock %}

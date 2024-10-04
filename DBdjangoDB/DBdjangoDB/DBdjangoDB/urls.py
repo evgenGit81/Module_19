@@ -25,5 +25,6 @@ urlpatterns = [
     path('platform/catalog/', catalog),
     path('platform/bag/', bag),
     path('platform/registration/', sign_up_by_django),
+    path("platform/posts/", post_gm),
     path('fmenu', fmenu),
 ]

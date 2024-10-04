@@ -1,16 +1,18 @@
 body {
-    background: linear-gradient(blue, pink);
+    background: linear-gradient(#0000FF, #7B68EE);
     }
 h1 {
     text-align: center;
+    color: #FF8C00;
 }
 a {
-    color: yellow;
+    color: #FF6347;
  }
 main {
-    background: linear-gradient(blue, pink);
+      background: linear-gradient(to right, #BDB76B, #7B68EE);
+
     }
 
 button {
-    background-color: green;
+    background-color: #4682B4;
 }

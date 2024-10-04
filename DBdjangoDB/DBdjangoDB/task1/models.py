@@ -21,7 +21,7 @@ class Game(models.Model):
 
 class Post(models.Model):
 
-    title = models.CharField(max_length=1000)
+    title = models.CharField(max_length=150)
     content = models.TextField()
     author_writer = models.CharField(max_length=500)
 

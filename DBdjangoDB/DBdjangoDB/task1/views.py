@@ -3,15 +3,17 @@ from django.views.generic import TemplateView
 from .models import *
 from django.http import HttpResponse
 from .forms import UserRegister
+from django.core.paginator import Paginator
+
 class Platform(TemplateView):
 
     title = 'Магазинчик'
     main_head = "Добро пожаловать в магазин по покупке игр!"
-    all_posts = Post.objects.values("title", "content", "author_writer")
+    # all_posts = Post.objects.values("title", "content", "author_writer")
     extra_context = {
         'main_head': main_head,
         'title': title,
-        'all_posts': all_posts
+        # 'all_posts': all_posts
         }
     template_name = 'index.html'
 
@@ -77,8 +79,14 @@ def sign_up_by_django(request):
 
 
 def post_gm(request):
-    all_posts = Post.objects.values("title", "content", "author_writer")
-    context = {
-        'all_posts': all_posts,
-    }
-    return render(request, "post.html", context=context)
+    all_posts = Post.objects.all()
+    paginator = Paginator(all_posts, 2)
+    page_number = request.GET.get('page')
+    try:
+        page_posts = paginator.get_page(page_number)
+    except PageNotAnInteger:
+        page_posts = paginator.page(1)
+    except EmptyPage:
+        page_posts = paginator.page(paginator.num_pages)
+
+    return render(request, "posts.html", {'page_posts': page_posts})
